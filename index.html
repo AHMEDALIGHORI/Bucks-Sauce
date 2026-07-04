@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bucks Sauce - BBQ Sauce Recreation</title>
+    <meta
+      name="description"
+      content="A local animated recreation of the Bucks Sauce homepage."
+    />
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="loader" aria-hidden="true">
+      <img src="assets/logo-full.svg" alt="" />
+      <div class="loader-dots"><span></span><span></span><span></span></div>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Bucks Sauce home">
+        <img src="assets/logo-full.svg" alt="Bucks Sauce" />
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a class="roll-link" href="#shop"><span>Shop</span><span>Shop</span></a>
+        <a class="roll-link" href="#wholesale"><span>Wholesale</span><span>Wholesale</span></a>
+        <a class="roll-link" href="#about"><span>About</span><span>About</span></a>
+        <a class="roll-link" href="#contact"><span>Contact</span><span>Contact</span></a>
+        <a class="roll-link" href="#faq"><span>FAQ</span><span>FAQ</span></a>
+      </nav>
+      <div class="header-actions">
+        <a class="pill roll-link sauce-link" href="#shop"><span>Get sauce</span><span>Get sauce</span></a>
+        <button class="icon-button" type="button" data-cart-open aria-label="Open cart">
+          <img src="assets/cart.svg" alt="" />
+        </button>
+        <button class="icon-button" type="button" data-menu-open aria-label="Open menu">
+          <img src="assets/menu.svg" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <aside class="drawer menu-drawer" data-menu aria-hidden="true">
+      <button class="drawer-close" type="button" data-menu-close aria-label="Close menu">
+        <img src="assets/close.svg" alt="" />
+      </button>
+      <nav aria-label="Mobile navigation">
+        <a href="#shop" class="drawer-link">Shop</a>
+        <a href="#wholesale" class="drawer-link">Wholesale</a>
+        <a href="#about" class="drawer-link">About</a>
+        <a href="#contact" class="drawer-link">Contact</a>
+        <a href="#faq" class="drawer-link">FAQ</a>
+      </nav>
+      <div class="drawer-socials">
+        <a href="https://www.instagram.com/buckssauce/">Instagram</a>
+        <a href="https://www.facebook.com/people/Bucks-Sauce/61585508764010/">Facebook</a>
+      </div>
+    </aside>
+
+    <aside class="drawer cart-drawer" data-cart aria-hidden="true">
+      <button class="drawer-close" type="button" data-cart-close aria-label="Close cart">
+        <img src="assets/close.svg" alt="" />
+      </button>
+      <img class="empty-bottle" src="assets/empty-bottle.webp" alt="empty bottle" />
+      <p>Your bottle is...<strong>empty</strong></p>
+      <a class="pill dark roll-link" href="#shop"><span>Add some sauce</span><span>Add some sauce</span></a>
+      <button class="checkout" type="button">Proceed to checkout <span>0</span></button>
+    </aside>
+    <div class="scrim" data-scrim></div>
+
+    <main>
+      <section class="hero section-pad" id="top">
+        <h1
+          class="hero-title title-font"
+          data-split
+          data-lines="The BBQ sauce|that makes other|sauces insecure"
+        >
+          The BBQ sauce that makes other sauces insecure
+        </h1>
+        <div class="hero-meta">
+          <p>Product n0.0<span data-product-number>1</span></p>
+          <p data-product-name>Crushed Pineapple Sriracha</p>
+        </div>
+
+        <div class="hero-stage" aria-live="polite">
+          <img class="splash hero-splash" src="assets/splash.svg" alt="" />
+          <div class="hero-product is-active" data-product="0">
+            <img class="bottle" src="assets/bottle-pineapple.avif" alt="Crushed Pineapple Sriracha" />
+            <img class="character character-a" src="assets/character-pineapple.avif" alt="" />
+            <img class="food-dot dot-a" src="assets/food-frame-1.avif" alt="" />
+            <img class="food-dot dot-b" src="assets/food-frame-2.avif" alt="" />
+          </div>
+          <div class="hero-product" data-product="1">
+            <img class="bottle" src="assets/bottle-habanero.avif" alt="Crushed Habanero Garlic" />
+            <img class="character character-b" src="assets/character-habanero.avif" alt="" />
+            <img class="food-dot dot-a" src="assets/food-frame-2.avif" alt="" />
+            <img class="food-dot dot-b" src="assets/food-frame-3.avif" alt="" />
+          </div>
+          <div class="hero-product" data-product="2">
+            <img class="bottle" src="assets/bottle-cherry.avif" alt="Crushed Cherry Garlic" />
+            <img class="character character-c" src="assets/character-cherry.avif" alt="" />
+            <img class="food-dot dot-a" src="assets/food-frame-3.avif" alt="" />
+            <img class="food-dot dot-b" src="assets/food-frame-1.avif" alt="" />
+          </div>
+        </div>
+
+        <div class="hero-controls">
+          <button type="button" data-prev aria-label="Previous sauce">
+            <img src="assets/arrow.svg" alt="" />
+          </button>
+          <a class="pill roll-link" href="#shop" data-product-link>
+            <span>Shop Now</span><span>Shop Now</span>
+          </a>
+          <button type="button" data-next aria-label="Next sauce">
+            <img src="assets/arrow.svg" alt="" />
+          </button>
+        </div>
+      </section>
+
+      <section class="intro-copy section-pad reveal">
+        <p data-split>
+          Our BBQ sauces use real, natural stuff like it's the 1800s. Slap it on
+          anything you grill and act surprised when people think you can cook.
+        </p>
+      </section>
+
+      <section class="benefits section-pad" id="about">
+        <div class="benefit-sticky">
+          <article class="benefit-card reveal">
+            <div>
+              <p class="kicker">No corn syrup</p>
+              <p>Sweet is fine. Sugar-lab sweet is not. We left high fructose corn syrup on the bottom shelf where it belongs.</p>
+            </div>
+            <img src="assets/no-hfc.svg" alt="no high fructose corn syrup" />
+          </article>
+          <article class="benefit-card reveal">
+            <div>
+              <p class="kicker">No seed oils</p>
+              <p>We skip ultra-processed seed oils and use ingredients that actually belong in food.</p>
+            </div>
+            <img src="assets/no-seed-oils.svg" alt="no seed oils" />
+          </article>
+          <article class="benefit-card reveal">
+            <div>
+              <p class="kicker">No additives</p>
+              <p>No preservatives. No artificial nonsense. No "what is that?" ingredients hiding behind words you cannot pronounce.</p>
+            </div>
+            <img src="assets/no-additives.svg" alt="no additives" />
+          </article>
+          <article class="benefit-card reveal">
+            <div>
+              <p class="kicker">Gluten free</p>
+              <p>No gluten, no thickening tricks, no drama. Just sauce that plays nice with your diet and acts up on the grill.</p>
+            </div>
+            <img src="assets/gluten-free.svg" alt="gluten free" />
+          </article>
+        </div>
+      </section>
+
+      <section class="weapons section-pad" id="shop">
+        <img class="weapon-mark" src="assets/weapon.svg" alt="" />
+        <h2 class="section-title title-font" data-split data-lines="Choose|your|weapon">Choose your weapon</h2>
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <a href="#" aria-label="Crushed Pineapple Sriracha"></a>
+            <h3 class="title-font">Crushed<br />Pineapple<br />Sriracha</h3>
+            <p>Pineapple sweetness. Gentle heat. Perfect balance.</p>
+            <div class="bottle-wrap">
+              <img class="antler" src="assets/antler.svg" alt="" />
+              <img class="card-bottle" src="assets/bottle-pineapple.avif" alt="Crushed Pineapple Sriracha bottle" />
+            </div>
+            <button class="add-button" type="button" data-add><span>Add to cart</span><strong>$12.00</strong></button>
+            <a class="view-link" href="#">View product <img src="assets/arrow.svg" alt="" /></a>
+          </article>
+          <article class="product-card reveal offset">
+            <a href="#" aria-label="Crushed Habanero Garlic"></a>
+            <h3 class="title-font">Crushed<br />Habanero<br />Garlic</h3>
+            <p>Habanero fire. Clean burn. No apologies.</p>
+            <div class="bottle-wrap">
+              <img class="antler" src="assets/antler.svg" alt="" />
+              <img class="card-bottle" src="assets/bottle-habanero.avif" alt="Crushed Habanero Garlic bottle" />
+            </div>
+            <button class="add-button" type="button" data-add><span>Add to cart</span><strong>$12.00</strong></button>
+            <a class="view-link" href="#">View product <img src="assets/arrow.svg" alt="" /></a>
+          </article>
+          <article class="product-card reveal deep-offset">
+            <a href="#" aria-label="Crushed Cherry Garlic"></a>
+            <h3 class="title-font">Crushed<br />Cherry<br />Garlic</h3>
+            <p>Sweet depth. Savory backbone. Cherry with grit.</p>
+            <div class="bottle-wrap">
+              <img class="antler" src="assets/antler.svg" alt="" />
+              <img class="card-bottle" src="assets/bottle-cherry.avif" alt="Crushed Cherry Garlic bottle" />
+            </div>
+            <button class="add-button" type="button" data-add><span>Add to cart</span><strong>$12.00</strong></button>
+            <a class="view-link" href="#">View product <img src="assets/arrow.svg" alt="" /></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="why" data-why id="wholesale">
+        <div class="why-sticky">
+          <h2 class="why-title title-font">Why Bucks Sauce</h2>
+          <div class="why-track" data-why-track>
+            <article class="why-panel">
+              <span>01</span>
+              <img src="assets/why-small-batch.avif" alt="small batch sauce prep" />
+              <h3 class="title-font">Small batches</h3>
+              <p>Small runs. No conveyor belts, just slow simmering, constant taste checks, and sauce with a pulse.</p>
+            </article>
+            <article class="why-panel">
+              <span>02</span>
+              <img src="assets/why-real.avif" alt="real food ingredients" />
+              <h3 class="title-font">Real ingredients</h3>
+              <p>Fruit, heat, garlic, smoke, and enough attitude to make bland food nervous.</p>
+            </article>
+            <article class="why-panel">
+              <span>03</span>
+              <img src="assets/why-wholesale.avif" alt="sauce in a restaurant setting" />
+              <h3 class="title-font">Oh, this?</h3>
+              <p>It tastes homemade in the dangerous way, like you might start taking credit for dinner.</p>
+            </article>
+            <article class="why-panel">
+              <span>04</span>
+              <img src="assets/why-sauce.avif" alt="sauced food closeup" />
+              <h3 class="title-font">Boring ends here</h3>
+              <p>BBQ sauce should do more than sit there. This one shows up with opinions.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="packs section-pad">
+        <div class="pack-food">
+          <img src="assets/wings.avif" alt="chicken wings" />
+        </div>
+        <div class="pack-panel reveal">
+          <h2 class="title-font">Buy a pack</h2>
+          <h3 class="title-font">Save some bucks</h3>
+          <div class="pack-toggle" role="group" aria-label="Select pack size">
+            <button class="is-active" type="button" data-pack="3">3 pack</button>
+            <button type="button" data-pack="6">6 pack</button>
+          </div>
+          <div class="pack-images">
+            <img class="is-active" data-pack-image="3" src="assets/pack-3-mixed.avif" alt="three pack of Bucks Sauce" />
+            <img data-pack-image="6" src="assets/pack-6-mixed.avif" alt="six pack of Bucks Sauce" />
+          </div>
+          <p data-pack-name>Crushed Pineapple Sriracha</p>
+          <button class="add-button pack-add" type="button" data-add>
+            <span>Add to cart</span><strong data-pack-price>$32.00</strong>
+          </button>
+        </div>
+      </section>
+
+      <section class="reviews section-pad" id="faq">
+        <h2 class="reviews-title title-font">Reviews</h2>
+        <div class="review-marquee">
+          <div class="review-track">
+            <article class="review">
+              <p class="reviewer">Kyle Seip</p>
+              <h3 class="title-font">I just love the product.</h3>
+              <p>You're gonna see me use it a lot. (@castiron_kyle)</p>
+            </article>
+            <article class="review">
+              <p class="reviewer">The HeatBros</p>
+              <h3 class="title-font">They have amazing BBQ sauce!</h3>
+              <p>It was absolutely delicious. (@theheatbrosco)</p>
+            </article>
+            <article class="review">
+              <p class="reviewer">Captain Cooks</p>
+              <h3 class="title-font">The best BBQ sauce I've had in a very long time.</h3>
+              <p>It's how BBQ sauce should taste. (@captaincooksfood)</p>
+            </article>
+            <article class="review">
+              <p class="reviewer">Trey M.</p>
+              <h3 class="title-font">Best sauce I ever had and it's not close.</h3>
+              <p>I put it on a chicken sandwich. This made that sandwich amazing.</p>
+            </article>
+            <article class="review">
+              <p class="reviewer">Jason M.</p>
+              <h3 class="title-font">Yeah, this replaced every other sauce I had.</h3>
+              <p>First BBQ sauce I've had that actually tastes like real ingredients.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="club section-pad" id="contact">
+        <img src="assets/logo-full.svg" alt="Bucks Sauce" />
+        <div>
+          <h2 class="title-font">Join the Bucks Club</h2>
+          <form>
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" type="email" placeholder="Email address" />
+            <button class="pill roll-link" type="submit"><span>Sign up</span><span>Sign up</span></button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
