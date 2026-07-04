@@ -85,3 +85,14 @@ Desktop gets the full animated product and horizontal-section experience. Mobile
 ## Usage Note
 
 This is a local recreation for preview and development. Before publishing publicly or using commercially, confirm you have rights to use the Bucks Sauce brand, copy, imagery, logo, and product assets.
+
+
+## Suggested GitHub Topics
+
+~~~text
+html css javascript responsive-design frontend
+~~~
+
+## License
+
+This project is available under the MIT License. See [LICENSE](LICENSE).
