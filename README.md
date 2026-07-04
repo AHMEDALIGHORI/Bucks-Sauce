@@ -2,6 +2,14 @@
 
 A local, animated recreation of the Bucks Sauce homepage. It is built as a plain HTML, CSS, and JavaScript site with local assets, custom typography, responsive layouts, and motion inspired by the original sauce-heavy experience.
 
+<p align="center">
+  <img src="assets/readme-preview.gif" alt="Animated preview of the Bucks Sauce website recreation" width="900">
+</p>
+
+## Animated Preview
+
+The README includes a looping hero-style GIF generated from the same local product, food, and brand assets used by the website. It shows the sauce bottles floating, sauce dots moving, and the warm Bucks Sauce visual style before anyone opens the site.
+
 ## What This Includes
 
 - Animated loading screen with the Bucks-style logo reveal and bouncing dots.
@@ -40,7 +48,7 @@ bucks-sauce-clone/
   index.html       Main page markup
   styles.css       Layout, colors, typography, responsive rules, animations
   script.js        Carousel, drawers, scroll reveals, navigation, pack switcher
-  assets/          Local images, icons, logo, and fonts
+  assets/          Local images, icons, logo, fonts, and README preview GIF
 ```
 
 ## Run Locally
